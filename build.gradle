@@ -13,9 +13,9 @@ apply plugin: 'groovy'
 // Dependencies
 configure(allprojects)
 {
-    ext.groovy = '2.1.0'
-    ext.slf4jVersion = '1.7.2'
-    ext.logbackVersion = '1.0.9'
+    ext.groovy = '2.4.3'
+    ext.slf4jVersion = '1.7.12'
+    ext.logbackVersion = '1.1.2'
 }
 
 // In this section you declare where to find the dependencies of your project
@@ -28,7 +28,7 @@ repositories {
 // In this section you declare the dependencies for your production and test code
 dependencies {
     // We use the latest groovy 2.x version for building this library
-    compile 'org.codehaus.groovy:groovy-all:2.4.3'
+    compile "org.codehaus.groovy:groovy-all:$groovy"
 
     // Logging
     compile "org.slf4j:slf4j-api:$slf4jVersion"
